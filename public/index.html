@@ -1,0 +1,66 @@
+<html ng-app="todoApp">
+    <head>
+        <title>Todo List</title>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="app.js"></script>
+        <script src="bower_components\angular-route\angular-route.js"></script>
+        <script src="bower_components\node_modules\firebase/firebase.js"></script>
+        <script src="bower_components/angularfire/dist/angularfire.js"></script>
+        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#330867">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#330867">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    
+    
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDVsd9EW1YcPS1-h_zTE5rSOCUFp6uXzV4",
+    authDomain: "todoapp1-6aec7.firebaseapp.com",
+    databaseURL: "https://todoapp1-6aec7.firebaseio.com",
+    projectId: "todoapp1-6aec7",
+    storageBucket: "todoapp1-6aec7.appspot.com",
+    messagingSenderId: "631312608982"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    </head>
+    <body>
+
+<script>
+   window.fbAsyncInit = function() {
+      FB.init ({
+         appId      : '115324839135075',
+         xfbml      : true,
+         version    : 'v2.6'
+      });
+   };
+
+   (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+   } (document, 'script', 'facebook-jssdk'));
+	
+</script>
+
+        <ng-view></ng-view>
+    </body>
+</html>
