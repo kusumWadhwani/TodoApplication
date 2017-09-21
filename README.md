@@ -42,4 +42,4 @@ The Todo App project is live <a href="https://todoapp1-6aec7.firebaseapp.com">he
 * <b>Kusum Wadhwani   </b>
 <a href="mailto:kusumwadhwa786@gmail.com">Email</a> | <a href="https://github.com/kusumWadhwani">Github</a> | <a href="https://twitter.com/kusum_072">Twitter</a> 
 # <a name="license"></a> License
-This project is licensed under the MIT License - see the <a href="https://github.com/kusumWadhwani/TodoApplication/blob/master/License.txt">License.txt</a> file for details
+This project is licensed under the MIT License - see the <a href="https://github.com/kusumWadhwani/TodoApplication/blob/master/LICENSE.txt">License.txt</a> file for details
